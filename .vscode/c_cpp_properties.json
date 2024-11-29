@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "/usr/include/c++/v1", 
+                "/Library/Frameworks/Python.framework/Versions/3.10/include/python3.10",  
+                "/Users/alexabowman/Library/Python/3.10/lib/python/site-packages/pybind11/include", 
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "macFrameworkPath": [
+                "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+            ],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "macos-clang-arm64",
+            "browse": {
+                "path": [
+                    "/usr/include/c++/v1",  // Standard C++ library
+                    "/Library/Frameworks/Python.framework/Versions/3.10/include/python3.10",  // Python headers
+                    "/Users/alexabowman/Library/Python/3.10/lib/python/site-packages/pybind11/include",  // Pybind11 headers
+                    "${workspaceFolder}/**"    
+                ]
+            }
+        }
+    ],
+    "version": 4
+}
