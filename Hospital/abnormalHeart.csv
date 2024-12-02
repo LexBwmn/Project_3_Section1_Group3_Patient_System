@@ -1,0 +1,9 @@
+Timestamp,Patient ID,Name,Surname,Gender,Threshold Low,Threshold High,Measured Range,Measured Value,Final Record
+2024-11-30 21:55:20,500,John,Doe,Male,97,164,High,169,Yes
+2024-11-30 22:02:25,500,John,Doe,Male,97,164,High,169,Yes
+2024-11-30 22:02:32,500,John,Doe,Male,97,164,High,169,Yes
+2024-11-30 22:02:39,500,John,Doe,Male,97,164,High,168,Yes
+2024-11-30 22:02:44,500,John,Doe,Male,97,164,High,169,Yes
+2024-11-30 22:02:54,500,John,Doe,Male,97,164,High,169,Yes
+2024-11-30 22:03:00,500,John,Doe,Male,97,164,Low,96,Yes
+2024-12-01 01:39:15,500,John,Doe,Male,97,164,Low,95,Yes

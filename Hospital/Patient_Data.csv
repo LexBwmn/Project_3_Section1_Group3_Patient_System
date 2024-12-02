@@ -1,0 +1,13 @@
+Patient ID,Name,Surname,Age,Gender,Threshold Low,Threshold High
+500,John,Doe,26,Male,97,164
+501,Jane,Smith,31,Female,99,168
+502,Michael,Brown,25,Male,97,165
+503,Emily,Johnson,58,Female,85,144
+504,Sophia,Davis,22,Female,103,176
+505,Isabella,Wilson,25,Female,102,174
+506,James,Martinez,16,Male,102,173
+507,David,Garcia,18,Male,101,171
+508,Olivia,Miller,45,Female,91,156
+509,William,Moore,76,Male,72,122
+510,Charlotte,Taylor,89,Female,68,116
+511,Alexander,Anderson,33,Male,93,158

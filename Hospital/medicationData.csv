@@ -1,0 +1,22 @@
+patientID,name,surname,age,gender,medication,dosage,time
+401,Sarah,Johnson,67,Female,Metformin,500mg,08:00 AM
+401,Sarah,Johnson,67,Female,Atorvastatin,10mg,10:00 PM
+402,Michael,Brown,54,Male,Insulin,10 units,07:30 AM
+403,James,Davis,45,Male,Amlodipine,5mg,06:45 AM
+403,James,Davis,45,Male,Metformin,850mg,12:00 PM
+403,James,Davis,45,Male,Warfarin,2.5mg,10:15 PM
+404,Emily,Miller,30,Female,Paracetamol,500mg,10:30 AM
+405,Robert,Wilson,70,Male,Metformin,1000mg,06:15 AM
+405,Robert,Wilson,70,Male,Atorvastatin,20mg,07:45 PM
+405,Robert,Wilson,70,Male,Losartan,50mg,10:30 PM
+406,Olivia,Moore,38,Female,Clopidogrel,75mg,08:45 AM
+406,Olivia,Moore,38,Female,Omeprazole,20mg,01:30 PM
+407,William,Taylor,55,Male,Aspirin,100mg,07:00 AM
+408,Ava,Anderson,29,Female,Loratadine,10mg,09:30 AM
+408,Ava,Anderson,29,Female,Ibuprofen,200mg,08:15 PM
+409,John,Thomas,48,Male,Paracetamol,500mg,06:00 AM
+409,John,Thomas,48,Male,Atorvastatin,10mg,09:30 PM
+409,John,Thomas,48,Male,Metformin,500mg,01:15 PM
+410,Emma,Jackson,60,Female,Omeprazole,40mg,08:00 AM
+410,Emma,Jackson,60,Female,Amlodipine,5mg,06:00 PM
+411,Charles,Clark,72,Male,Losartan,50mg,09:15 AM
