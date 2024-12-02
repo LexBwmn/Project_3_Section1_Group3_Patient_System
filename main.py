@@ -4,12 +4,12 @@ from new_patient import create_new_patient_form
 from doctor_section import create_doctor_section
 from patient_section import create_patient_section
 from nurse_section import create_nurse_section
-from bed_position_section import create_bed_section
-from bed_temperature_section import create_bed_section_temperature
-from glucose_section import create_glucose_section
-from oxygen_section import create_oxygen_section
 from heart_rate_monitor_section import heart_rate_monitor, showSubMenu  # Importing functions from heart_rate_monitor_section
-from BW_PM import create_section_BWPM
+from BW_PM import BodyWeightPressureMonitorExtended, GUIApp 
+from glucose_section import GlucoseLevelMonitorApp, GlucoseLevelMonitorExtended
+from oxygen_section import OxygenSaturationMonitorApp, OxygenSaturationMonitoringDeviceExtended
+from bed_temperature_section import BedTemperatureApp, BedTemperatureMonitorExtended
+
 
 
 # Tema ayarları
@@ -39,16 +39,24 @@ def show_content(content):
     elif content == "Heart Rate Monitor":
         heart_rate_monitor(content_frame)  # Heart Rate Monitor bölümünü çağırıyoruz
         showSubMenu(content_frame)  # Alt menüyü ekliyoruz
-    elif content == "Bed Position Monitor":
-        create_bed_section(content_frame)
-    elif content == "Bed Temperature Monitor":
-        create_bed_section_temperature(content_frame)
-    elif content == "Glucose Level Monitor":
-        create_glucose_section(content_frame)
-    elif content == "Oxygen Saturation Monitor":
-        create_oxygen_section(content_frame)
     elif content == "Body Weight and Pressure Monitor":
-        create_section_BWPM(content_frame)
+        monitor = BodyWeightPressureMonitorExtended()  # Create the monitor instance
+        monitor.loadThresholdData("BodyWeight.csv")  # Load the threshold data (example)
+        monitor.loadPatientData("Patient_data.csv")  # Load the patient data (example)
+        app = GUIApp(content_frame, monitor)  # Initialize the GUI app with the monitor
+    elif content == "Glucose Level Monitor":
+        monitor = GlucoseLevelMonitorExtended()  # Create an instance of the monitor class
+        monitor.load_patient_data("Patient_data.csv")  # Load the patient data
+        app = GlucoseLevelMonitorApp(content_frame, monitor)  # Initialize the GUI app for Glucose Level Monitor
+    elif content == "Oxygen Saturation Monitor":
+        monitor = OxygenSaturationMonitoringDeviceExtended()  # Create an instance of the monitor class
+        monitor.load_patient_data("Patient_data.csv")  # Load the patient data
+        app = OxygenSaturationMonitorApp(content_frame, monitor)
+    elif content == "Bed Temperature Monitor":
+        monitor = BedTemperatureMonitorExtended() # Create the monitor instance
+        monitor.load_threshold_data("C:/Users/navje/OneDrive - Conestoga College/Desktop/PROJECTWORK/Project_3_Section1_Group3_Patient_System/Bed_Temperature.csv")
+        monitor.load_patient_data("Patient_data.csv")  # Load the patient data (example)
+        app = BedTemperatureApp(content_frame, monitor) # Initialize the GUI app with the monitor
     else:
         label = customtkinter.CTkLabel(content_frame, text=f"{content} Content", font=("Arial", 20))
         label.pack(pady=20)
@@ -66,7 +74,6 @@ menu_buttons = [
     {"name": "Heart Rate Monitor", "command": lambda: show_content("Heart Rate Monitor")},
     {"name": "Medicine Monitoring", "command": lambda: show_content("Medicine Monitoring")},
     {"name": "Blood Pressure Monitoring", "command": lambda: show_content("Blood Pressure Monitoring")},
-    {"name": "Bed Position Monitor", "command": lambda: show_content("Bed Position Monitor")},
     {"name": "Body Weight and Pressure Monitor", "command": lambda: show_content("Body Weight and Pressure Monitor")},
     {"name": "Glucose Level Monitor", "command": lambda: show_content("Glucose Level Monitor")},
     {"name": "Oxygen Saturation Monitor", "command": lambda: show_content("Oxygen Saturation Monitor")},
