@@ -1,0 +1,32 @@
+ageGroup,disease,normalTemperature,minimum Temperature,maximum Temperature
+2,Hypothermia,36.8,32,35
+1,Post-Surgery Recovery,37.1,36.5,37.5
+5,Infection,36.8,38,40
+3,Pneumonia,36.7,37.5,39.5
+5,Cold Exposure,37.1,32,35
+10,Hypothermia,36.5,32,35
+6,Sepsis,37.1,38.5,41
+8,Pneumonia,36.7,37.5,39.5
+12,Infection,36.5,38.8,40
+11,Heat Stroke,37.4,40,42
+16,Pneumonia,37.5,37.5,39.5
+23,Infection,37.1,40.1,42
+24,Infection,36.9,38,40
+32,Normal,36.8,36.5,37.5
+32,Fever,37,38,40
+34,Pneumonia,36.6,37.5,39.5
+32,Cold Exposure,36.8,32,35
+38,Post-Surgery Recovery,37.3,36.5,37.5
+54,COVID-19,36.6,37.5,39
+60,Heat Stroke,36.9,40,42
+58,Heat Stroke,36.6,40,42
+61,Normal,37.3,36.5,37.5
+61,Pneumonia,36.9,37.5,39.5
+68,Hypothermia,37.4,32,35
+66,Post-Surgery Recovery,36.8,36.5,37.5
+69,Heat Stroke,36.5,40,42
+72,Cold Exposure,36.8,32,35
+77,Pneumonia,36.8,37.5,39.5
+84,Sepsis,36.5,38.5,41
+82,Heat Stroke,36.9,40,42
+85,Cold Exposure,37,32,35
